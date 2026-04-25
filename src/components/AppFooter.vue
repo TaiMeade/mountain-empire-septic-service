@@ -8,7 +8,7 @@
           <div class="d-flex align-center mb-4" style="gap: 12px;">
             <!-- LOGO: Replace src below with your logo file when ready -->
             <v-img
-              src="./images/logo.JPG"
+              :src="logoSrc"
               alt="Mountain Empire Septic Service"
               max-height="48"
               max-width="48"
@@ -129,6 +129,8 @@
 </template>
 
 <script setup>
+import logoSrc from '@/assets/logo.JPG'
+
 defineEmits(['open-contact'])
 
 const footerServices = [

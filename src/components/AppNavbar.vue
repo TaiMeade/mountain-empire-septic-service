@@ -10,7 +10,7 @@
       <a href="#hero" class="d-flex align-center text-decoration-none" style="gap: 10px;" @click.prevent="smoothScroll('#hero')">
         <!-- LOGO: Replace src below with your logo file path when ready -->
         <v-img
-          src="./images/logo.JPG"
+          :src="logoSrc"
           alt="Mountain Empire Septic Service"
           max-height="48"
           max-width="48"
@@ -91,6 +91,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import logoSrc from '@/assets/logo.JPG'
 
 const emit = defineEmits(['open-contact'])
 

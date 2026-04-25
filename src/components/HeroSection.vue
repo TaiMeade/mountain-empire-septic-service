@@ -2,7 +2,7 @@
   <section
     id="hero"
     class="hero-section d-flex align-center"
-    style="min-height: 100vh; position: relative; overflow: hidden;"
+    :style="`min-height: 100vh; position: relative; overflow: hidden; background-image: linear-gradient(135deg, rgba(5,8,20,0.75) 0%, rgba(5,8,20,0.82) 100%), url('${heroImage}'); background-size: cover; background-position: center; background-repeat: no-repeat;`"
   >
     <!-- Background overlay -->
     <div class="hero-overlay" />
@@ -78,10 +78,12 @@
 
 <script setup>
 import { useGoogleReviews } from '@/composables/useGoogleReviews'
+import heroImageSrc from '@/assets/hero.JPG'
 
 defineEmits(['open-contact'])
 
 const { overallRating, totalRatings } = useGoogleReviews()
+const heroImage = heroImageSrc
 
 const trustBadges = [
   { icon: 'mdi-shield-check', text: 'Licensed & Insured' },
@@ -92,12 +94,7 @@ const trustBadges = [
 
 <style scoped>
 .hero-section {
-  background-image:
-    linear-gradient(135deg, rgba(5, 8, 20, 0.75) 0%, rgba(5, 8, 20, 0.82) 100%),
-    url('./images/hero.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background handled via inline style binding */
 }
 
 .hero-content {
