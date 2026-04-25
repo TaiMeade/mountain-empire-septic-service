@@ -20,48 +20,25 @@
                 mdi-star
               </v-icon>
             </div>
-            <span class="font-weight-black text-primary" style="font-size: 1.5rem;">{{ overallRating }}</span>
+            <span class="font-weight-black text-primary" style="font-size: 1.5rem;">{{ overallRating?.toFixed(1) }}</span>
             <span class="text-secondary" style="font-size: 0.875rem;">
               ({{ totalRatings }} Google Reviews)
             </span>
           </div>
-
-          <p v-if="usingFallback && !loading" class="text-secondary mt-4" style="font-size: 0.875rem; font-style: italic;">
-            Reviews shown below. Add your Google API credentials to display live reviews.
-          </p>
         </v-col>
       </v-row>
 
-      <!-- Skeleton loaders -->
-      <v-row v-if="loading" justify="center">
-        <v-col v-for="n in 3" :key="n" cols="12" sm="6" lg="4">
-          <v-card rounded="xl" elevation="0" class="pa-6" style="border: 1px solid rgba(15,23,42,0.08);">
-            <div class="d-flex align-center mb-4" style="gap: 12px;">
-              <v-skeleton-loader type="avatar" width="44" height="44" />
-              <div style="flex: 1;">
-                <v-skeleton-loader type="text" width="60%" />
-                <v-skeleton-loader type="text" width="40%" />
-              </div>
-            </div>
-            <v-skeleton-loader type="paragraph" />
-          </v-card>
-        </v-col>
-      </v-row>
-
-      <!-- Review cards -->
-      <v-row v-else justify="center">
-        <v-col
+      <!-- Review cards — horizontal scroll -->
+      <div class="reviews-scroll-track">
+        <div
           v-for="(review, index) in reviews"
           :key="index"
-          cols="12"
-          sm="6"
-          lg="4"
-          class="d-flex"
+          class="review-card-wrap"
         >
           <v-card
             rounded="xl"
             elevation="0"
-            class="review-card pa-6 w-100 d-flex flex-column"
+            class="review-card pa-6 h-100 d-flex flex-column"
             style="border: 1px solid rgba(15,23,42,0.08);"
           >
             <!-- Stars -->
@@ -94,14 +71,13 @@
                   {{ review.author }}
                 </div>
                 <div class="text-secondary" style="font-size: 0.78rem;">
-                  {{ review.relativeTime }}
-                  <span v-if="!usingFallback" style="margin-left: 4px;">· Google Review</span>
+                  {{ review.relativeTime }} · Google Review
                 </div>
               </div>
             </div>
           </v-card>
-        </v-col>
-      </v-row>
+        </div>
+      </div>
 
       <!-- Google Reviews link -->
       <v-row justify="center" class="mt-8">
@@ -125,14 +101,9 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
 import { useGoogleReviews } from '@/composables/useGoogleReviews'
 
-const { reviews, overallRating, totalRatings, loading, usingFallback, fetchReviews } = useGoogleReviews()
-
-onMounted(() => {
-  fetchReviews()
-})
+const { reviews, overallRating, totalRatings } = useGoogleReviews()
 </script>
 
 <style scoped>
@@ -150,6 +121,37 @@ onMounted(() => {
   line-height: 1.15;
   color: #0F172A;
   letter-spacing: -0.02em;
+}
+
+.reviews-scroll-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 12px;
+  /* hide scrollbar but keep scrollability */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(15,23,42,0.15) transparent;
+}
+
+.reviews-scroll-track::-webkit-scrollbar {
+  height: 5px;
+}
+
+.reviews-scroll-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.reviews-scroll-track::-webkit-scrollbar-thumb {
+  background: rgba(15,23,42,0.15);
+  border-radius: 99px;
+}
+
+.review-card-wrap {
+  flex: 0 0 320px;
+  scroll-snap-align: start;
+  display: flex;
 }
 
 .review-card {

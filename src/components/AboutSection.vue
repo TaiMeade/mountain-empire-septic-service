@@ -54,12 +54,17 @@
 </template>
 
 <script setup>
-const stats = [
-  { value: '5.0★', label: 'Google Rating' },
+import { computed } from 'vue'
+import { useGoogleReviews } from '@/composables/useGoogleReviews'
+
+const { overallRating } = useGoogleReviews()
+
+const stats = computed(() => [
+  { value: `${overallRating.value?.toFixed(1) ?? '5.0'}★`, label: 'Google Rating' },
   { value: 'M-F', label: '7 AM – 5 PM' },
   { value: '100%', label: 'Licensed & Insured' },
   { value: 'Free', label: 'Estimates' },
-]
+])
 </script>
 
 <style scoped>

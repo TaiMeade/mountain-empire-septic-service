@@ -10,7 +10,7 @@
       <a href="#hero" class="d-flex align-center text-decoration-none" style="gap: 10px;" @click.prevent="smoothScroll('#hero')">
         <!-- LOGO: Replace src below with your logo file path when ready -->
         <v-img
-          src="/logo.JPG"
+          src="./images/logo.JPG"
           alt="Mountain Empire Septic Service"
           max-height="48"
           max-width="48"
@@ -64,7 +64,7 @@
       <v-list-item
         prepend-icon="mdi-home"
         title="Mountain Empire Septic"
-        subtitle="Granville, NY"
+        subtitle="Fries, VA"
         class="mb-2"
       />
       <v-divider />

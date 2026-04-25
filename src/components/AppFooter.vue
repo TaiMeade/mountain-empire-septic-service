@@ -8,7 +8,7 @@
           <div class="d-flex align-center mb-4" style="gap: 12px;">
             <!-- LOGO: Replace src below with your logo file when ready -->
             <v-img
-              src="/logo.JPG"
+              src="./images/logo.JPG"
               alt="Mountain Empire Septic Service"
               max-height="48"
               max-width="48"

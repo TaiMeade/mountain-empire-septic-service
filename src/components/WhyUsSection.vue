@@ -46,6 +46,10 @@
 </template>
 
 <script setup>
+import { useGoogleReviews } from '@/composables/useGoogleReviews'
+
+const { overallRating } = useGoogleReviews()
+
 const features = [
   {
     icon: 'mdi-certificate-outline',
@@ -54,8 +58,8 @@ const features = [
   },
   {
     icon: 'mdi-star-circle-outline',
-    title: '5.0-Star Google Rating',
-    description: "Our reputation speaks for itself. Every customer who has reviewed us has given us 5 stars — and we intend to keep it that way.",
+    title: 'Top-Rated on Google',
+    description: `Our reputation speaks for itself — our goal is to satisfy every customer.`,
   },
   {
     icon: 'mdi-home-outline',

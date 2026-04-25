@@ -15,7 +15,7 @@
           <div class="d-flex justify-center mb-5">
             <v-chip color="accent" variant="flat" size="small" class="font-weight-medium px-4 py-2">
               <v-icon start size="14">mdi-star</v-icon>
-              5.0-Star Rated on Google &nbsp;·&nbsp; Fries, VA
+              {{ overallRating ? overallRating.toFixed(1) : '5.0' }}-Star Rated on Google{{ totalRatings ? ` (${totalRatings} reviews)` : '' }} &nbsp;·&nbsp; Fries, VA
             </v-chip>
           </div>
 
@@ -77,11 +77,14 @@
 </template>
 
 <script setup>
+import { useGoogleReviews } from '@/composables/useGoogleReviews'
+
 defineEmits(['open-contact'])
+
+const { overallRating, totalRatings } = useGoogleReviews()
 
 const trustBadges = [
   { icon: 'mdi-shield-check', text: 'Licensed & Insured' },
-  { icon: 'mdi-clock-fast', text: '24/7 Emergency Service' },
   { icon: 'mdi-tag-outline', text: 'Free Estimates' },
   { icon: 'mdi-home-heart', text: 'Family Owned' },
 ]
@@ -91,7 +94,7 @@ const trustBadges = [
 .hero-section {
   background-image:
     linear-gradient(135deg, rgba(5, 8, 20, 0.75) 0%, rgba(5, 8, 20, 0.82) 100%),
-    url('/hero.JPG');
+    url('./images/hero.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
