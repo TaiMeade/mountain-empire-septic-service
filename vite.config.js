@@ -4,7 +4,7 @@ import vuetify from 'vite-plugin-vuetify'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-  base: '/mountain-empire-septic-service/',
+  base: '/',
   plugins: [
     vue(),
     vuetify({ autoImport: true }),
