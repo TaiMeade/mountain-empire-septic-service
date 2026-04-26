@@ -10,6 +10,13 @@ const reviewData = [
     date: '2026-04-24',
     profilePhotoUrl: null,
   },
+  {
+    author: 'Ashley Bailey',
+    rating: 5,
+    text: 'Fantastic, quick and efficient service!!! Sam is fantastic! Very affordable!',
+    date: '2026-04-22',
+    profilePhotoUrl: null,
+  }
 ]
 
 export const reviews = reviewData.map((r) => ({
