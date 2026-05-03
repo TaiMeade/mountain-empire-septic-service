@@ -16,6 +16,20 @@ const reviewData = [
     text: 'Fantastic, quick and efficient service!!! Sam is fantastic! Very affordable!',
     date: '2026-04-25 18:15:00',
     profilePhotoUrl: null,
+  },
+  {
+    author: 'ian l',
+    rating: 5,
+    text: "This man knows what he's doing. Couldn't have asked for a more professional or fair tradesman",
+    date: '2026-04-27 09:30:00',
+    profilePhotoUrl: null,
+  },
+  {
+    author: 'Tina Evans',
+    rating: 5,
+    text: "They went above and beyond truly happy with the work I highly recommend this company!\nThank you!\nJohn Carroll",
+    date: '2026-05-01 09:30:00',
+    profilePhotoUrl: null,
   }
 ]
 
