@@ -51,6 +51,13 @@ const reviewData = [
     text: 'Sam and crew were totally professional, did what they said they would do, were priced competitively and were here to pump the day after I called. Highly recommend this company.',
     date: '2026-05-27 17:00:00',
     profilePhotoUrl: null,
+  },
+  {
+    author: 'Tim Farmer',
+    rating: 5,
+    text: 'Sam did an outstanding job on what turned out to be a very large undertaking. Located our septic tank which is buried 5 feet under a driveway which wasn’t easy, excavated, got it pumped, even made some minor repairs and then backfilled. Communication was great, he’s very prompt, pricing was competitive, shows up when he says he will and he works extremely hard. He stuck with the job through a few pivots until it was done working well into the dark to finish up. Don’t hesitate to give him a call.',
+    date: '2026-06-02 12:00:00',
+    profilePhotoUrl: null
   }
 ]
 
