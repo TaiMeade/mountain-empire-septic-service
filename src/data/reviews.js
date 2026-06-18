@@ -58,6 +58,20 @@ const reviewData = [
     text: 'Sam did an outstanding job on what turned out to be a very large undertaking. Located our septic tank which is buried 5 feet under a driveway which wasn’t easy, excavated, got it pumped, even made some minor repairs and then backfilled. Communication was great, he’s very prompt, pricing was competitive, shows up when he says he will and he works extremely hard. He stuck with the job through a few pivots until it was done working well into the dark to finish up. Don’t hesitate to give him a call.',
     date: '2026-06-02 12:00:00',
     profilePhotoUrl: null
+  },
+  {
+    author: 'Skyler Lintecum',
+    rating: 5,
+    text: 'They came and done an amazing job on my septic tank I highly recommend them they were very friendly, professional, and reasonably priced.',
+    date: '2026-06-17 12:00:00',
+    profilePhotoUrl: null,
+  },
+  {
+    author: 'Tai Meade',
+    rating: 5,
+    text: 'Amazing work!! Water wasn\'t working at all, and they managed to get it working as well as all the new necessary parts! Water runs great now! Highly recommend for any septic/plumbing needs!',
+    date: '2026-06-18 16:55:00',
+    profilePhotoUrl: null,
   }
 ]
 
