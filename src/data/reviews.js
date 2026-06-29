@@ -72,6 +72,13 @@ const reviewData = [
     text: 'Amazing work!! Water wasn\'t working at all, and they managed to get it working as well as all the new necessary parts! Water runs great now! Highly recommend for any septic/plumbing needs!',
     date: '2026-06-18 16:55:00',
     profilePhotoUrl: null,
+  },
+  {
+    author: 'Robert Parolisi',
+    rating: 5,
+    text: 'Came when he said, communicated well, and did a fast and great job at a great price. Found, and pumped tank in hours',
+    date: '2026-06-22 12:00:00',
+    profilePhotoUrl: null,
   }
 ]
 
