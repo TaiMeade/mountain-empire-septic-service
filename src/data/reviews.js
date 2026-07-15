@@ -79,6 +79,13 @@ const reviewData = [
     text: 'Came when he said, communicated well, and did a fast and great job at a great price. Found, and pumped tank in hours',
     date: '2026-06-22 12:00:00',
     profilePhotoUrl: null,
+  },
+  {
+    author: 'BladeArson',
+    rating: 5,
+    text: 'Very good people. Great work. You can tell the pride in their work',
+    date: '2026-07-01 12:00:00',
+    profilePhotoUrl: null,
   }
 ]
 
