@@ -86,6 +86,13 @@ const reviewData = [
     text: 'Very good people. Great work. You can tell the pride in their work',
     date: '2026-07-01 12:00:00',
     profilePhotoUrl: null,
+  },
+  {
+    author: 'Robert Lloyd',
+    rating: 2,
+    text: 'We wanted to use this company however after over a month of calls and excuses from them we decided to go elsewhere. Had two separate days that they were supposed to come out and they didn’t show. We called and rescheduled again. Communication is lacking. Cannot recommend this company.',
+    date: '2026-07-23 12:00:00',
+    profilePhotoUrl: null,
   }
 ]
 
