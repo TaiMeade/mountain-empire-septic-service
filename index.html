@@ -2,11 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="@/assets/logo.JPG" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicons. These live in public/ so they keep a stable, crawlable URL:
+         Vite content-hashes anything imported from src/assets, which would
+         change the icon path on every deploy and break Google's favicon cache. -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0F172A" />
+
+    <link rel="canonical" href="https://www.mountainempiresepticservice.com/" />
+    <title>Mountain Empire Septic Service | Fries, VA</title>
     <meta name="description" content="Mountain Empire Septic Service — Professional septic pumping, installation, and repairs serving Fries, Galax, Carroll County, and Grayson County, VA." />
     <meta name="keywords" content="septic service, septic pumping, septic installation, septic repair, Fries VA, Galax VA, Carroll County, Grayson County, Southwest Virginia" />
-    <title>Mountain Empire Septic Service | Fries, VA</title>
+
+    <!-- Open Graph / social link previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mountain Empire Septic Service" />
+    <meta property="og:title" content="Mountain Empire Septic Service | Fries, VA" />
+    <meta property="og:description" content="Professional septic pumping, installation, and repairs serving Fries, Galax, Carroll County, and Grayson County, VA." />
+    <meta property="og:url" content="https://www.mountainempiresepticservice.com/" />
+    <meta property="og:image" content="https://www.mountainempiresepticservice.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mountain Empire Septic Service logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mountain Empire Septic Service | Fries, VA" />
+    <meta name="twitter:description" content="Professional septic pumping, installation, and repairs serving Fries, Galax, Carroll County, and Grayson County, VA." />
+    <meta name="twitter:image" content="https://www.mountainempiresepticservice.com/og-image.png" />
   </head>
   <body>
     <div id="app"></div>
