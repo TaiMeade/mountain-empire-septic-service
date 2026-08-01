@@ -54,7 +54,7 @@ const features = [
   {
     icon: 'mdi-certificate-outline',
     title: 'Licensed & Insured',
-    description: "Fully licensed and insured in New York State. You have peace of mind knowing the job is done to code and you're protected.",
+    description: "Fully licensed in Virginia. You have peace of mind knowing the job is done to code.",
   },
   {
     icon: 'mdi-star-circle-outline',
