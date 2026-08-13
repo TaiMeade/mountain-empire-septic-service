@@ -93,6 +93,20 @@ const reviewData = [
     text: 'We wanted to use this company however after over a month of calls and excuses from them we decided to go elsewhere. Had two separate days that they were supposed to come out and they didn’t show. We called and rescheduled again. Communication is lacking. Cannot recommend this company.',
     date: '2026-07-23 12:00:00',
     profilePhotoUrl: null,
+  },
+  {
+    author: 'Brittany Hill',
+    rating: 5,
+    text: 'Super friendly and reasonably priced! Explained everything well, and got the job done quickly! Would definitely recommend to anyone!',
+    date: '2026-08-06 12:00:00',
+    profilePhotoUrl: null,
+  },
+  {
+    author: 'Barry Alderman',
+    rating: 5,
+    text: 'Sam went out of his way to pump out my septic tank, on a Saturday afternoon. Very friendly and knowledgeable. I highly recommend using this company. Thank you!!!',
+    date: '2026-08-08 12:00:00',
+    profilePhotoUrl: null,
   }
 ]
 
