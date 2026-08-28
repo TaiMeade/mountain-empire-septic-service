@@ -107,6 +107,20 @@ const reviewData = [
     text: 'Sam went out of his way to pump out my septic tank, on a Saturday afternoon. Very friendly and knowledgeable. I highly recommend using this company. Thank you!!!',
     date: '2026-08-08 12:00:00',
     profilePhotoUrl: null,
+  },
+  {
+    author: 'Sarah Draper',
+    rating: 5,
+    text: 'We had these guys come do our septic removal they was very nice compassionate did what they said they would, was on time, they work well under pressure...so we discovered, and also came back the next day and worked in the rain made sure the job was done and finished we was satisfied give these boys a chance they are very fair on there prices and helped us in a very hard time thank you guys again for holding your word and being there when we really needed good septic service....',
+    date: '2026-08-22 12:00:00',
+    profilePhotoUrl: null,
+  },
+  {
+    author: 'Mike Bowers',
+    rating: 5,
+    text: 'I would highly recommend Sam for all your septic service needs. He is a genuine and honest guy who works hard to ensure everything is 100% at the end of the job.',
+    date: '2026-08-26 12:00:00',
+    profilePhotoUrl: null,
   }
 ]
 
