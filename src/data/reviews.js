@@ -102,10 +102,17 @@ const reviewData = [
     profilePhotoUrl: null,
   },
   {
+    author: 'Barbara Hiatt',
+    rating: 5,
+    text: 'Barbara Hiatt',
+    date: '2026-08-21 12:00:00',
+    profilePhotoUrl: null,
+  },
+  {
     author: 'Barry Alderman',
     rating: 5,
-    text: 'Sam went out of his way to pump out my septic tank, on a Saturday afternoon. Very friendly and knowledgeable. I highly recommend using this company. Thank you!!!',
-    date: '2026-08-08 12:00:00',
+    text: 'Sam went out of his way to pump out my septic tank, on a Saturday afternoon. Very friendly and knowledgeable. I highly recommend using this company. Thank you!!!\nSam came back out this Sunday morning to fix a couple of spots where the septic pipe had broken. I had previously had a well known big company come out to give me an estimate. Sam got everything fixed perfectly, and saved us over 10 thousand dollars!!! Thank you so much Sam!!!',
+    date: '2026-08-21 13:00:00',
     profilePhotoUrl: null,
   },
   {
