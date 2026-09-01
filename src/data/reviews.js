@@ -128,6 +128,13 @@ const reviewData = [
     text: 'I would highly recommend Sam for all your septic service needs. He is a genuine and honest guy who works hard to ensure everything is 100% at the end of the job.',
     date: '2026-08-26 12:00:00',
     profilePhotoUrl: null,
+  },
+  {
+    author: 'Shelley',
+    rating: 5,
+    text: 'We had septic isssues over the weekend, uncertain when we might be able to get the issue fixed. We called Sam, and he came out 30 minutes later to assess the situation; and he repaired the problem the following day.\n\nWe were very impressed with his expertise, professionalism, and reasonable price. We would not hesitate to use him again!',
+    date: '2026-08-30 12:00:00',
+    profilePhotoUrl: null,
   }
 ]
 
