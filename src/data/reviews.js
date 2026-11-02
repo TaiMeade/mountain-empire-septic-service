@@ -157,6 +157,13 @@ const reviewData = [
     date: '2026-09-20 12:00:00',
     profilePhotoUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLdzvRhcaodV1GiA1Z3HLtk8GSsYn51MM1zqACXisnV9LHyLw=w72-h72-p-rp-mo-br100'
   },
+  {
+    author: 'Pam Johnson',
+    rating: 5,
+    text: 'I would recommend Sam over any other company. He went above and beyond to help us out with our septic issues.',
+    date: '2026-10-27 12:00:00',
+    profilePhotoUrl: 'https://lh3.googleusercontent.com/a-/ALV-UjWhaZf7emRHooiEmAj8MS7AVk0Lgbg_jF_510AxiUkPcDT8Pkj4=w97-h97-p-rp-mo-br100'
+  }
 ]
 
 export const reviews = reviewData.map((r) => ({
